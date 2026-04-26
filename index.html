@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CHASE BANK</title>
+</head>
+<body>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{
+background:linear-gradient(#eef4fb,#d8e8ff);
+color:#222;
+}
+
+header{
+background:white;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+}
+
+.logo{
+font-size:34px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.more, .logout{
+background:#eee;
+padding:8px 16px;
+border-radius:6px;
+}
+
+nav{
+background:linear-gradient(to right,#444,#111);
+padding:16px 50px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-right:40px;
+font-weight:bold;
+}
+
+.hero{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+padding:50px;
+}
+
+.card{
+background:linear-gradient(135deg,#0053c7,#2f8cff);
+color:white;
+padding:35px;
+border-radius:30px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.card h2{
+margin:20px 0;
+}
+
+.amount{
+font-size:40px;
+font-weight:bold;
+margin-top:20px;
+}
+
+.section{
+padding:0 50px 50px;
+}
+
+.transactions{
+background:white;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.trans-header{
+background:linear-gradient(90deg,#0053c7,#2f8cff);
+color:white;
+padding:30px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th{
+background:#f1f5fb;
+padding:18px;
+text-align:left;
+}
+
+td{
+padding:18px;
+border-top:1px solid #ddd;
+}
+
+tr:hover{
+background:#eef6ff;
+}
+
+.red{color:#d62828;font-weight:bold}
+.green{color:#15803d;font-weight:bold}
+
+.quick{
+padding:50px;
+text-align:center;
+}
+
+.quick h2{
+margin-bottom:35px;
+}
+
+.tiles{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.tile{
+background:white;
+padding:50px 30px;
+border-radius:30px;
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.tile:hover{
+transform:translateY(-8px);
+}
+
+.icon{
+font-size:55px;
+margin-bottom:20px;
+}
+
+footer{
+background:#0f172a;
+color:white;
+padding:30px;
+text-align:center;
+margin-top:30px;
+}
+</style>
+
+<header>
+
+
+<div class="logo">
+<div style="display:flex;align-items:center;gap:14px;">
+<span style="font-size:64px;font-weight:900;letter-spacing:4px;color:#111;font-family:Arial Black,sans-serif;">CHASE</span>
+<div style="width:58px;height:58px;background:#0b75d1;clip-path:polygon(25% 0%,75% 0%,100% 25%,100% 75%,75% 100%,25% 100%,0% 75%,0% 25%);position:relative;">
+<div style="position:absolute;inset:13px;background:white;"></div>
+</div>
+</div>
+</div>
+
+
+<nav>
+<a href="#">My Accounts</a>
+<a href="#">Payments & Transfers</a>
+<a href="#">Deposit Checks</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="card">
+<h3>Checking Account</h3>
+<h2>Available Balance</h2>
+<div class="amount">$6,742,894.45</div>
+</div>
+
+<div class="card">
+    <h3>Account Holder</h3>
+    <h2>MARK R.JONES</h2>
+</div>
+
+<div class="card">
+<h3>Mileage Plus Card</h3>
+<h2>Outstanding Balance</h2>
+<div class="amount">$1,238,245.02</div>
+</div>
+
+<div class="card">
+<h3>Mortgage</h3>
+<h2>Next Payment</h2>
+<div class="amount">$2,636,724.99</div>
+</div>
+</section>
+
+<section class="section">
+<div class="transactions">
+<div class="trans-header">
+<h2>Recent Transactions</h2>
+<p>Manage your account activity</p>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Description</th>
+<th>Debit/Credit</th>
+<th>Balance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4/01/2025</td>
+<td>Wire Transfer to Michelle Hoekman (Tuition Payment)</td>
+<td class="red">-$15,000.00</td>
+<td>$22,200.39</td>
+</tr>
+<tr>
+<td>17/07/2025</td>
+<td>Wire Transfer to Realsworth Logistics LLC</td>
+<td class="red">-$124,650.00</td>
+<td>$37,200.39</td>
+</tr>
+<tr>
+<td>21/10/2025</td>
+<td>Payment Received From Hassan</td>
+<td class="green">+$94,000.00</td>
+<td>$161,850.39</td>
+</tr>
+<tr>
+<td>16/12/2025</td>
+<td>Check #1026</td>
+<td class="red">-$750.00</td>
+<td>$33.62</td>
+</tr>
+<tr>
+<td>30/01/2026</td>
+<td>Online Transfer</td>
+<td class="green">+$8,550.00</td>
+<td>$883.62</td>
+</tr>
+<tr>
+<td>4/02/2026</td>
+<td>Check #1025</td>
+<td class="red">-$4,166.77</td>
+<td>$33.62</td>
+</tr>
+<tr>
+<td>19/03/2026</td>
+<td>Mortgage Payment</td>
+<td class="red">-$3,000.00</td>
+<td>$4,200.19</td>
+</tr>
+<tr>
+<td>21/04/2026</td>
+<td>Online Transfer</td>
+<td class="red">-$5,600.00</td>
+<td>$7,200.39</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section class="quick">
+<h2>Quick Access</h2>
+<div class="tiles">
+<div class="tile">
+<div class="icon">🏧</div>
+<h3>Find ATM / Branch</h3>
+</div>
+
+<div class="tile">
+<div class="icon">☎</div>
+<h3>Contact Us</h3>
+</div>
+
+<div class="tile">
+<div class="icon">💳</div>
+<h3>Card Services</h3>
+</div>
+</div>
+</section>
+
+<footer>
+Classic Banking
+</footer>
+
+</body>
+</html>
+
